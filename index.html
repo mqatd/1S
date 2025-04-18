@@ -205,8 +205,14 @@
                 <i id="volume-icon" class="fas fa-volume-up"></i>
                 <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="1">
             </div>
-        </div>
+        </div><a href="download.html" target="_blank">
+  <button id="download-btn">
+    <i class="fas fa-download"></i> Download
+  </button>
+</a>
     </div>
+    
+    
 
     <script>
         const audioPlayer = document.getElementById('audio-player');
@@ -232,6 +238,8 @@
                 duration: "03:13"
             }
         ];
+        
+        
 
         function loadSong(songIndex) {
             const song = songs[songIndex];
